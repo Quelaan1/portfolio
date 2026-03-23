@@ -1,0 +1,154 @@
+<h2>Home Page Design</h2>
+<p class="subtitle">Bento grid layout — hero + project/stats/nav cards. Review the section breakdown.</p>
+
+<div class="mockup">
+  <div class="mockup-header">Home Page — Full Layout</div>
+  <div class="mockup-body" style="background: #16111c; padding: 0; font-family: 'Inter', sans-serif;">
+
+    <!-- Nav -->
+    <div style="background: rgba(30,26,36,0.5); backdrop-filter: blur(12px); padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(73,69,76,0.2);">
+      <div style="color: #d0bcff; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: -0.5px;">Tilak Kumar</div>
+      <div style="display: flex; gap: 20px; font-size: 11px; font-weight: 600;">
+        <span style="color: #d0bcff; border-bottom: 2px solid #d0bcff; padding-bottom: 2px;">Home</span>
+        <span style="color: #938f99;">Projects</span>
+        <span style="color: #938f99;">Experience</span>
+        <span style="color: #938f99;">Contact</span>
+      </div>
+      <div style="background: #d0bcff; color: #3c0091; padding: 5px 14px; border-radius: 8px; font-size: 10px; font-weight: 700;">View Resume</div>
+    </div>
+
+    <!-- Hero Section -->
+    <div style="padding: 48px 24px 32px;">
+      <div style="color: #6bd8cb; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; margin-bottom: 10px;">THE DIGITAL ARCHITECT</div>
+      <div style="color: #e9dfee; font-size: 32px; font-weight: 800; font-family: 'Manrope', sans-serif; line-height: 1.05; letter-spacing: -1.5px; margin-bottom: 12px;">
+        Architecting Resilient<br/><span style="color: #d0bcff;">Digital Ecosystems.</span>
+      </div>
+      <div style="color: #cbc4cc; font-size: 12px; line-height: 1.6; max-width: 480px; margin-bottom: 16px;">
+        Engineering high-performance distributed systems and ML pipelines with a focus on scale, security, and computational efficiency.
+      </div>
+      <div style="display: flex; gap: 10px; align-items: center;">
+        <div style="background: #d0bcff; color: #3c0091; padding: 8px 20px; border-radius: 8px; font-size: 11px; font-weight: 700;">View Projects</div>
+        <div style="border: 1px solid #49454c; color: #d0bcff; padding: 8px 20px; border-radius: 8px; font-size: 11px; font-weight: 600;">Download Resume</div>
+        <div style="margin-left: 8px; display: flex; align-items: center; gap: 6px;">
+          <div style="width: 8px; height: 8px; border-radius: 50%; background: #6bd8cb; box-shadow: 0 0 8px #6bd8cb;"></div>
+          <span style="color: #6bd8cb; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; font-weight: 500;">Open for Innovation</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bento Grid -->
+    <div style="padding: 0 24px 24px;">
+
+      <!-- Row 1: Flagship + Stats -->
+      <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 10px; margin-bottom: 10px;">
+        <!-- Flagship Project -->
+        <div style="background: #1e1a24; border-radius: 16px; padding: 20px; position: relative; overflow: hidden; grid-row: span 2;">
+          <div style="position: absolute; top: 0; right: 0; width: 120px; height: 120px; background: linear-gradient(135deg, #d0bcff22, #14003b44); border-radius: 50%; filter: blur(40px);"></div>
+          <div style="position: relative;">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 14px;">
+              <span style="background: #38333e; color: #6bd8cb; padding: 3px 10px; border-radius: 20px; font-size: 8px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; border: 1px solid rgba(73,69,76,0.3);">Flagship System</span>
+            </div>
+            <div style="color: #e9dfee; font-size: 18px; font-weight: 800; font-family: 'Manrope', sans-serif; margin-bottom: 8px;">Amour - High-Trust Dating App</div>
+            <div style="color: #cbc4cc; font-size: 10px; line-height: 1.5; margin-bottom: 14px;">Microservices-based social infrastructure with gRPC transport, hexagonal architecture, and 68+ services.</div>
+            <!-- Mini image placeholder -->
+            <div style="background: #2d2833; border-radius: 10px; height: 60px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; border: 1px solid rgba(73,69,76,0.2);">
+              <span style="color: #938f99; font-size: 9px;">[ Amour App Mockup Image ]</span>
+            </div>
+            <div style="display: flex; gap: 6px;">
+              <span style="background: #38333e; color: #cbc4cc; padding: 3px 8px; border-radius: 6px; font-size: 8px;">gRPC</span>
+              <span style="background: #38333e; color: #cbc4cc; padding: 3px 8px; border-radius: 6px; font-size: 8px;">NestJS</span>
+              <span style="background: #38333e; color: #cbc4cc; padding: 3px 8px; border-radius: 6px; font-size: 8px;">K8s</span>
+              <span style="background: #38333e; color: #cbc4cc; padding: 3px 8px; border-radius: 6px; font-size: 8px;">React Native</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stat Card 1 -->
+        <div style="background: #1e1a24; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; justify-content: center;">
+          <div style="color: #6bd8cb; font-size: 28px; font-weight: 800; font-family: 'Manrope', sans-serif; letter-spacing: -1px;">100K+</div>
+          <div style="color: #938f99; font-size: 8px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600;">batch inserts/sec</div>
+        </div>
+
+        <!-- Stat Card 2 -->
+        <div style="background: #1e1a24; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; justify-content: center;">
+          <div style="color: #6bd8cb; font-size: 28px; font-weight: 800; font-family: 'Manrope', sans-serif; letter-spacing: -1px;">40%</div>
+          <div style="color: #938f99; font-size: 8px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600;">efficiency gain</div>
+        </div>
+      </div>
+
+      <!-- Row 2: Secondary projects -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
+        <div style="background: #1e1a24; border-radius: 16px; padding: 16px;">
+          <div style="color: #d0bcff; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">Project</div>
+          <div style="color: #e9dfee; font-size: 13px; font-weight: 700; margin-bottom: 4px;">Distributed Log Management</div>
+          <div style="color: #938f99; font-size: 9px;">StarRocks · Kafka · Kubernetes</div>
+        </div>
+        <div style="background: #1e1a24; border-radius: 16px; padding: 16px;">
+          <div style="color: #d0bcff; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">Project</div>
+          <div style="color: #e9dfee; font-size: 13px; font-weight: 700; margin-bottom: 4px;">ML Pattern Analysis</div>
+          <div style="color: #938f99; font-size: 9px;">PyTorch · Pinecone · FastAPI</div>
+        </div>
+      </div>
+
+      <!-- Row 3: Experience + Contact nav cards -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
+        <div style="background: #1e1a24; border-radius: 16px; padding: 16px; border: 1px solid rgba(73,69,76,0.2); cursor: pointer;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <div style="color: #6bd8cb; font-size: 9px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; margin-bottom: 4px;">Experience</div>
+              <div style="color: #e9dfee; font-size: 13px; font-weight: 700;">Career Timeline</div>
+              <div style="color: #938f99; font-size: 9px; margin-top: 2px;">Avacend · Constient · 2019–Present</div>
+            </div>
+            <div style="color: #d0bcff; font-size: 16px;">→</div>
+          </div>
+        </div>
+        <div style="background: linear-gradient(135deg, rgba(208,188,255,0.06), rgba(20,0,59,0.15)); border-radius: 16px; padding: 16px; border: 1px solid rgba(208,188,255,0.15); text-align: center; cursor: pointer; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+          <div style="color: #e9dfee; font-size: 13px; font-weight: 700; margin-bottom: 4px;">Let's Build Together</div>
+          <div style="color: #d0bcff; font-size: 10px; font-weight: 500;">Open for Innovation →</div>
+        </div>
+      </div>
+
+      <!-- Row 4: Tech breadth strip -->
+      <div style="background: #1e1a24; border-radius: 16px; padding: 14px 20px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
+        <div style="text-align: center;">
+          <div style="color: #d0bcff; font-size: 16px; font-weight: 800;">15+</div>
+          <div style="color: #938f99; font-size: 7px; text-transform: uppercase; letter-spacing: 1px;">Backend Technologies</div>
+        </div>
+        <div style="width: 1px; background: #49454c;"></div>
+        <div style="text-align: center;">
+          <div style="color: #d0bcff; font-size: 16px; font-weight: 800;">5+</div>
+          <div style="color: #938f99; font-size: 7px; text-transform: uppercase; letter-spacing: 1px;">Years Engineering</div>
+        </div>
+        <div style="width: 1px; background: #49454c;"></div>
+        <div style="text-align: center;">
+          <div style="color: #d0bcff; font-size: 16px; font-weight: 800;">68+</div>
+          <div style="color: #938f99; font-size: 7px; text-transform: uppercase; letter-spacing: 1px;">Microservices Built</div>
+        </div>
+        <div style="width: 1px; background: #49454c;"></div>
+        <div style="text-align: center;">
+          <div style="color: #d0bcff; font-size: 16px; font-weight: 800;">3</div>
+          <div style="color: #938f99; font-size: 7px; text-transform: uppercase; letter-spacing: 1px;">Production Systems</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="border-top: 1px solid rgba(73,69,76,0.2); background: #1e1a24; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; font-size: 10px;">
+      <div>
+        <span style="color: #d0bcff; font-weight: 700;">Tilak Kumar</span>
+        <span style="color: #938f99; margin-left: 4px;">© 2024 Digital Architect</span>
+      </div>
+      <div style="display: flex; gap: 16px; align-items: center;">
+        <span style="color: #938f99;">GitHub</span>
+        <span style="color: #938f99;">LinkedIn</span>
+        <span style="display: flex; align-items: center; gap: 4px; color: #6bd8cb;">
+          <span style="width: 5px; height: 5px; border-radius: 50%; background: #6bd8cb;"></span>
+          System Status: Active
+        </span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top: 20px;">This is the complete Home page wireframe with the bento grid layout. The flagship Amour project card spans 2 rows, stats sit alongside it, followed by project previews, navigation cards, and a tech breadth strip.</p>

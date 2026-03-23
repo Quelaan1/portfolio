@@ -96,7 +96,7 @@ src/
 
 **Bento Grid:**
 - **Row 1** (2fr 1fr, flagship spans 2 rows):
-  - Flagship Amour card: badge, title, description, mockup image (from Amour website project `hero-profile.jpg`), tech tags
+  - Flagship Amour card: badge, title, description, mockup image (from Amour website project `hero-profile.jpg`), tech tags. Note: this is a **compact inline version** inside `BentoGrid.tsx`, NOT a reuse of `FlagshipProject.tsx` (which is the full-width showcase on `/projects`)
   - Stat card: "100K+" batch inserts/sec
   - Stat card: "40%" efficiency gain
 - **Row 2** (1fr 1fr): Distributed Log Management + ML Pattern Analysis preview cards

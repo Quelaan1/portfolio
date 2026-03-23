@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#16111c",
+              "secondary-fixed": "#89f5e7",
+              "on-tertiary": "#213145",
+              "on-background": "#e9dfee",
+              "on-tertiary-container": "#6d7d94",
+              "surface-container-high": "#2d2833",
+              "on-primary-fixed-variant": "#5516be",
+              "on-primary-fixed": "#23005c",
+              "on-surface": "#e9dfee",
+              "surface-container-highest": "#38333e",
+              "on-surface-variant": "#cbc4cc",
+              "on-tertiary-fixed-variant": "#38485d",
+              "on-secondary-fixed": "#00201d",
+              "outline-variant": "#49454c",
+              "tertiary": "#b7c8e1",
+              "primary": "#d0bcff",
+              "inverse-primary": "#6d3bd7",
+              "secondary": "#6bd8cb",
+              "primary-container": "#14003b",
+              "on-tertiary-fixed": "#0b1c30",
+              "surface-container-low": "#1e1a24",
+              "surface-tint": "#d0bcff",
+              "inverse-on-surface": "#332e3a",
+              "on-primary-container": "#8b5cf6",
+              "surface-container-lowest": "#100c16",
+              "surface-bright": "#3c3743",
+              "surface": "#16111c",
+              "secondary-fixed-dim": "#6bd8cb",
+              "on-error": "#690005",
+              "on-secondary-fixed-variant": "#005049",
+              "on-error-container": "#ffdad6",
+              "surface-container": "#221e28",
+              "background": "#16111c",
+              "secondary-container": "#29a195",
+              "tertiary-fixed-dim": "#b7c8e1",
+              "tertiary-fixed": "#d3e4fe",
+              "primary-fixed": "#e9ddff",
+              "on-secondary-container": "#00302b",
+              "inverse-surface": "#e9dfee",
+              "tertiary-container": "#000f22",
+              "outline": "#948f96",
+              "error-container": "#93000a",
+              "error": "#ffb4ab",
+              "on-primary": "#3c0091",
+              "primary-fixed-dim": "#d0bcff",
+              "on-secondary": "#003732",
+              "surface-variant": "#38333e"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-header {
+        background: rgba(22, 17, 28, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      .technical-gradient {
+        background: linear-gradient(135deg, #d0bcff 0%, #14003b 100%);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30 selection:text-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 no-border bg-[#1e1a24]/50 backdrop-blur-xl shadow-[0_40px_40px_rgba(208,188,255,0.04)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold text-[#d0bcff] tracking-tighter font-headline">
+                Tilak Kumar
+            </div>
+<div class="hidden md:flex items-center gap-8 font-manrope font-bold tracking-tight">
+<a class="text-[#938f99] hover:text-[#d0bcff] transition-colors duration-300 ease-in-out hover:scale-[1.02] active:scale-95" href="#">Home</a>
+<a class="text-[#938f99] hover:text-[#d0bcff] transition-colors duration-300 ease-in-out hover:scale-[1.02] active:scale-95" href="#">Projects</a>
+<a class="text-[#d0bcff] border-b-2 border-[#d0bcff] pb-1 duration-300 ease-in-out hover:scale-[1.02] active:scale-95" href="#">Experience</a>
+<a class="text-[#938f99] hover:text-[#d0bcff] transition-colors duration-300 ease-in-out hover:scale-[1.02] active:scale-95" href="#">Contact</a>
+</div>
+<button class="bg-[#d0bcff] text-[#3c0091] px-6 py-2.5 rounded-xl font-bold tracking-tight hover:scale-[1.02] active:scale-95 transition-all duration-300">
+                View Resume
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="flex flex-col md:flex-row items-end justify-between gap-8">
+<div class="max-w-2xl">
+<span class="text-secondary font-label tracking-[0.2em] text-xs font-bold mb-4 block uppercase">The Digital Architect</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-6 leading-[0.9]">
+                        Architecting <br/>
+<span class="text-primary">Production</span> Logic.
+                    </h1>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-high px-4 py-2 rounded-full mb-4">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+<span class="text-on-surface-variant text-sm font-medium tracking-wide">System Status: Active / Open for Innovation</span>
+</div>
+</div>
+</section>
+<!-- Technical Timeline -->
+<section class="max-w-7xl mx-auto px-8 space-y-24">
+<!-- CURRENT JOURNEY -->
+<div class="relative grid md:grid-cols-[1fr_2fr] gap-12 items-start">
+<div class="sticky top-40 space-y-4">
+<div class="text-primary font-headline text-2xl font-bold">2022 — Present</div>
+<h2 class="text-3xl font-bold tracking-tight">Avacend Inc</h2>
+<p class="text-on-surface-variant font-medium">Senior Software Engineer</p>
+<div class="flex flex-wrap gap-2 mt-4">
+<span class="px-3 py-1 bg-surface-container-highest text-secondary text-xs font-bold rounded-lg tracking-wider">CLICKHOUSE</span>
+<span class="px-3 py-1 bg-surface-container-highest text-secondary text-xs font-bold rounded-lg tracking-wider">GPT-4O</span>
+<span class="px-3 py-1 bg-surface-container-highest text-secondary text-xs font-bold rounded-lg tracking-wider">ML PIPELINES</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 md:p-12 rounded-[2rem] border-l-4 border-primary">
+<div class="grid md:grid-cols-2 gap-10">
+<div class="space-y-6">
+<h3 class="font-headline text-xl font-bold text-primary">Data Engineering at Scale</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                                Architecting high-throughput analytics engines using ClickHouse. Focused on real-time data ingestion and processing for large-scale enterprise monitoring.
+                            </p>
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-primary/10 text-primary">
+<span class="material-symbols-outlined" data-weight="fill">database</span>
+</div>
+<div>
+<div class="text-2xl font-bold tracking-tighter">100K+</div>
+<div class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">batch inserts/sec</div>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="font-headline text-xl font-bold text-primary">LLM &amp; Intelligence</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                                Pioneered a proprietary text-to-SQL engine leveraging GPT-4o, enabling non-technical stakeholders to query multi-petabyte datasets via natural language.
+                            </p>
+<div class="p-6 bg-surface-container-high rounded-2xl space-y-3">
+<div class="text-xs font-bold text-secondary tracking-widest uppercase">Integration Stack</div>
+<div class="text-sm text-on-surface leading-loose">
+                                    • Distributed ML Pipelines<br/>
+                                    • OpenAI API Optimization<br/>
+                                    • Real-time Query Translation
+                                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- THE FOUNDATION -->
+<div class="relative grid md:grid-cols-[1fr_2fr] gap-12 items-start">
+<div class="sticky top-40 space-y-4">
+<div class="text-outline font-headline text-2xl font-bold">2019 — 2022</div>
+<h2 class="text-3xl font-bold tracking-tight">Constient Global Solutions</h2>
+<p class="text-on-surface-variant font-medium">Founding Engineer</p>
+<div class="flex flex-wrap gap-2 mt-4">
+<span class="px-3 py-1 bg-surface-container-highest text-secondary text-xs font-bold rounded-lg tracking-wider">GOLANG</span>
+<span class="px-3 py-1 bg-surface-container-highest text-secondary text-xs font-bold rounded-lg tracking-wider">GRPC</span>
+<span class="px-3 py-1 bg-surface-container-highest text-secondary text-xs font-bold rounded-lg tracking-wider">DISTRIBUTED SYSTEMS</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 md:p-12 rounded-[2rem] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+<div class="relative space-y-10">
+<div class="max-w-xl">
+<h3 class="font-headline text-xl font-bold text-secondary mb-4">Core Infrastructure Design</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                                As a founding engineer, I spearheaded the transition from monolithic architecture to high-performance GoLang microservices. Developed a custom distributed log management system processing millions of events daily.
+                            </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+<div class="p-4 bg-surface-container-highest rounded-xl">
+<span class="material-symbols-outlined text-secondary block mb-2">hub</span>
+<div class="text-sm font-bold">gRPC Layers</div>
+</div>
+<div class="p-4 bg-surface-container-highest rounded-xl">
+<span class="material-symbols-outlined text-secondary block mb-2">terminal</span>
+<div class="text-sm font-bold">Log Orchestration</div>
+</div>
+<div class="p-4 bg-surface-container-highest rounded-xl">
+<span class="material-symbols-outlined text-secondary block mb-2">dns</span>
+<div class="text-sm font-bold">Microservices</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ACADEMICS & TRUST -->
+<div class="pt-12 border-t border-outline-variant/20">
+<h2 class="font-headline text-3xl font-extrabold tracking-tight mb-12">Academics &amp; Trust</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-surface-container-high p-8 rounded-2xl group transition-all hover:bg-surface-container-highest">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">school</span>
+<h3 class="text-xl font-bold mb-2">Diploma in CS</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Focused on Systems Architecture and Computational Logic. Graduated with high honors in Core Programming.</p>
+</div>
+<div class="bg-surface-container-high p-8 rounded-2xl group transition-all hover:bg-surface-container-highest">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">verified</span>
+<h3 class="text-xl font-bold mb-2">Industry Certifications</h3>
+<div class="space-y-2 mt-4">
+<div class="flex justify-between items-center text-xs font-bold tracking-widest uppercase text-on-surface-variant">
+<span>Cloud Computing</span>
+<span class="text-secondary">PRO</span>
+</div>
+<div class="h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-full"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high p-8 rounded-2xl border-2 border-primary/20 flex flex-col justify-center items-center text-center">
+<div class="w-16 h-16 rounded-full technical-gradient flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary text-3xl">lightbulb</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Open for Innovation</h3>
+<p class="text-on-surface-variant text-sm">Actively seeking strategic technical partnerships and breakthrough projects.</p>
+<button class="mt-6 text-primary font-bold text-sm tracking-widest uppercase hover:underline">Get In Touch</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#38333e]/20 tonal-shift bg-[#1e1a24]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full gap-6 max-w-7xl mx-auto">
+<div class="flex flex-col gap-2">
+<div class="text-[#d0bcff] font-manrope font-bold text-lg">Tilak Kumar</div>
+<p class="font-inter text-sm tracking-wide text-[#938f99]">© 2024 Tilak Kumar. Digital Architect.</p>
+</div>
+<div class="flex gap-8 font-inter text-sm tracking-wide">
+<a class="text-[#938f99] hover:text-[#6bd8cb] transition-all opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="text-[#938f99] hover:text-[#6bd8cb] transition-all opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<div class="flex items-center gap-2 text-[#6bd8cb] font-medium opacity-80 hover:opacity-100">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    System Status: Active
+                </div>
+</div>
+</div>
+</footer>
+</body></html>
