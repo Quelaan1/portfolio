@@ -1,33 +1,35 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Manrope, Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const manrope = Manrope({
+  variable: "--font-headline",
   subsets: ["latin"],
+  weight: ["700", "800"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-body",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
-  title: "Tilak Kumar | Senior Software Engineer",
+  title: "Tilak Kumar | Digital Architect",
   description:
-    "Portfolio of Tilak Kumar, a Senior Software Engineer specializing in scalable backend microservices and responsive frontend applications.",
+    "Engineering high-performance distributed systems and ML pipelines with a focus on scale, security, and computational efficiency.",
   openGraph: {
-    title: "Tilak Kumar | Senior Software Engineer",
+    title: "Tilak Kumar | Digital Architect",
     description:
-      "Senior Software Engineer specializing in scalable backend microservices, distributed systems, and AI-driven features.",
+      "Engineering high-performance distributed systems and ML pipelines with a focus on scale, security, and computational efficiency.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tilak Kumar | Senior Software Engineer",
+    title: "Tilak Kumar | Digital Architect",
     description:
-      "Senior Software Engineer specializing in scalable backend microservices, distributed systems, and AI-driven features.",
+      "Engineering high-performance distributed systems and ML pipelines with a focus on scale, security, and computational efficiency.",
   },
 };
 
@@ -37,10 +39,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className="dark">
+      <body className={`${manrope.variable} ${inter.variable} antialiased`}>
         {children}
       </body>
     </html>

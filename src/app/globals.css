@@ -1,33 +1,45 @@
 @import "tailwindcss";
 
-:root {
-  --background: #030712;
-  --foreground: #f8fafc;
+@theme {
+  --color-surface: #16111c;
+  --color-surface-dim: #16111c;
+  --color-surface-container-lowest: #100c16;
+  --color-surface-container-low: #1e1a24;
+  --color-surface-container: #221e28;
+  --color-surface-container-high: #2d2833;
+  --color-surface-container-highest: #38333e;
+  --color-surface-bright: #3c3743;
+  --color-on-surface: #e9dfee;
+  --color-on-surface-variant: #cbc4cc;
+  --color-primary: #d0bcff;
+  --color-on-primary: #3c0091;
+  --color-primary-container: #14003b;
+  --color-secondary: #6bd8cb;
+  --color-on-secondary: #003732;
+  --color-outline: #948f96;
+  --color-outline-variant: #49454c;
+  --color-error: #ffb4ab;
+  --font-family-headline: "Manrope", sans-serif;
+  --font-family-body: "Inter", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.cosmic-bg {
-  background-color: #030712;
-  background-image:
-    radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.1) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.1) 0px, transparent 50%);
-  background-attachment: fixed;
-}
-
-.glass-card {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.text-glow {
-  text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-family-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgb(208 188 255 / 0.3);
+  color: var(--color-primary);
+}
+
+.technical-gradient {
+  background: linear-gradient(135deg, #d0bcff 0%, #14003b 100%);
 }
