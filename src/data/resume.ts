@@ -15,7 +15,6 @@ export const resumeData = {
   stats: {
     batchInserts: "100K+",
     efficiencyGain: "40%",
-    dashboardsBuilt: "4",
     productionSystems: "3",
     backendTechnologies: "15+",
     yearsEngineering: "3+",
