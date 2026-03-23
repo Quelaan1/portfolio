@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { resumeData } from "@/data/resume";
+import { GitHubIcon, LinkedInIcon } from "@/components/ui/SocialIcons";
 
 export default function Footer() {
   return (
@@ -18,16 +18,18 @@ export default function Footer() {
             href={resumeData.personalInfo.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-outline hover:text-secondary transition-all opacity-80 hover:opacity-100"
+            className="flex items-center gap-2 text-outline hover:text-secondary transition-all opacity-80 hover:opacity-100"
           >
+            <GitHubIcon size={16} />
             GitHub
           </a>
           <a
             href={resumeData.personalInfo.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-outline hover:text-secondary transition-all opacity-80 hover:opacity-100"
+            className="flex items-center gap-2 text-outline hover:text-secondary transition-all opacity-80 hover:opacity-100"
           >
+            <LinkedInIcon size={16} />
             LinkedIn
           </a>
           <div className="flex items-center gap-2 text-secondary font-medium opacity-80 hover:opacity-100">

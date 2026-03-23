@@ -66,27 +66,40 @@ export default function BentoGrid() {
           </div>
         </motion.div>
 
+        {/* Right column: Amour highlights */}
         <motion.div
           variants={item}
-          className="bg-surface-container-low rounded-[2rem] p-8 flex flex-col justify-center"
+          className="bg-surface-container-low rounded-[2rem] p-6 flex flex-col justify-between"
         >
-          <div className="text-secondary text-4xl font-extrabold font-[family-name:var(--font-headline)] tracking-tighter">
-            {stats.batchInserts}
-          </div>
-          <div className="text-outline text-xs font-bold uppercase tracking-widest mt-1">
-            batch inserts/sec
+          <div>
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-primary text-xs font-bold uppercase tracking-widest">Database</span>
+            </div>
+            <div className="text-secondary text-3xl font-extrabold font-[family-name:var(--font-headline)] tracking-tighter mb-1">
+              68
+            </div>
+            <div className="text-on-surface text-sm font-bold mb-2">Prisma Models</div>
+            <p className="text-on-surface-variant text-xs leading-relaxed">
+              141 BTREE indexes with denormalized chat caching for 50x faster rendering
+            </p>
           </div>
         </motion.div>
 
         <motion.div
           variants={item}
-          className="bg-surface-container-low rounded-[2rem] p-8 flex flex-col justify-center"
+          className="bg-surface-container-low rounded-[2rem] p-6 flex flex-col justify-between"
         >
-          <div className="text-secondary text-4xl font-extrabold font-[family-name:var(--font-headline)] tracking-tighter">
-            {stats.efficiencyGain}
-          </div>
-          <div className="text-outline text-xs font-bold uppercase tracking-widest mt-1">
-            efficiency gain
+          <div>
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-primary text-xs font-bold uppercase tracking-widest">Queuing</span>
+            </div>
+            <div className="text-secondary text-3xl font-extrabold font-[family-name:var(--font-headline)] tracking-tighter mb-1">
+              4-Tier
+            </div>
+            <div className="text-on-surface text-sm font-bold mb-2">Priority System</div>
+            <p className="text-on-surface-variant text-xs leading-relaxed">
+              Presence-aware routing with circuit breaker pattern across 16 RabbitMQ exchanges
+            </p>
           </div>
         </motion.div>
       </div>

@@ -1,4 +1,5 @@
-import { Download, Mail, MapPin, Terminal, Globe } from "lucide-react";
+import { Download, Mail, MapPin } from "lucide-react";
+import { GitHubIcon, LinkedInIcon } from "@/components/ui/SocialIcons";
 import { resumeData } from "@/data/resume";
 
 export default function Dossier() {
@@ -72,7 +73,7 @@ export default function Dossier() {
             rel="noopener noreferrer"
             className="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface-container-highest transition-all duration-300"
           >
-            <Terminal size={24} />
+            <GitHubIcon size={24} />
           </a>
           <a
             href={personalInfo.linkedin}
@@ -80,7 +81,7 @@ export default function Dossier() {
             rel="noopener noreferrer"
             className="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface-container-highest transition-all duration-300"
           >
-            <Globe size={24} />
+            <LinkedInIcon size={24} />
           </a>
         </div>
       </section>
