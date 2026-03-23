@@ -196,7 +196,7 @@ export default function BentoGrid() {
         {[
           { value: stats.backendTechnologies, label: "Backend Technologies" },
           { value: stats.yearsEngineering, label: "Years Engineering" },
-          { value: stats.microservicesBuilt, label: "gRPC Services" },
+          { value: stats.dashboardsBuilt, label: "Dashboards Built" },
           { value: stats.productionSystems, label: "Production Systems" },
         ].map((stat, i, arr) => (
           <div key={stat.label} className="flex items-center gap-8 md:gap-16">
