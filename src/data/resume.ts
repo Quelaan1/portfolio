@@ -134,7 +134,7 @@ export const resumeData = {
       title: "Amour - High-Trust Dating App",
       slug: "amour",
       type: "Flagship System",
-      image: "/images/amour-mockup.jpg",
+      image: "/images/amour-showcase.jpg",
       icon: "/images/amour-icon.png",
       tech: [
         "React Native",
