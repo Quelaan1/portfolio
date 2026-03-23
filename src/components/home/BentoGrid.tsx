@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { resumeData } from "@/data/resume";
+import { PhoneMockup } from "@/components/ui/PhoneMockup";
 
 const container = {
   hidden: { opacity: 0 },
@@ -50,17 +50,9 @@ export default function BentoGrid() {
             <p className="text-on-surface-variant text-base mb-6 max-w-lg leading-relaxed">
               {flagship.summary}
             </p>
-            {flagship.image && (
-              <div className="relative w-full h-48 rounded-2xl overflow-hidden mb-6 border border-outline-variant/10">
-                <Image
-                  src={flagship.image}
-                  alt={flagship.title}
-                  fill
-                  className="object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-70 transition-all duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent" />
-              </div>
-            )}
+            <div className="flex justify-center my-6">
+              <PhoneMockup className="scale-[0.65]" />
+            </div>
             <div className="flex flex-wrap gap-2">
               {flagship.tech.slice(0, 5).map((t) => (
                 <span

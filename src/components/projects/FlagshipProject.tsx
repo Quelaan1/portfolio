@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { resumeData } from "@/data/resume";
+import { PhoneMockup } from "@/components/ui/PhoneMockup";
 
 export default function FlagshipProject() {
   const project = resumeData.projects[0];
@@ -61,17 +61,9 @@ export default function FlagshipProject() {
               </p>
             </div>
           )}
-          {project.image && (
-            <div className="flex-1 overflow-hidden rounded-[2rem] min-h-[250px] relative">
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover grayscale opacity-40"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent" />
-            </div>
-          )}
+          <div className="flex-1 flex items-center justify-center min-h-[250px] relative">
+            <PhoneMockup className="scale-[0.85] md:scale-100" />
+          </div>
         </div>
       </div>
     </motion.section>
