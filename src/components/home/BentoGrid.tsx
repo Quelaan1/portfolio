@@ -51,7 +51,7 @@ export default function BentoGrid() {
               {flagship.summary}
             </p>
             <div className="flex justify-center my-6">
-              <PhoneMockup className="scale-[0.65]" />
+              <PhoneMockup />
             </div>
             <div className="flex flex-wrap gap-2">
               {flagship.tech.slice(0, 5).map((t) => (
@@ -69,37 +69,49 @@ export default function BentoGrid() {
         {/* Right column: Amour highlights */}
         <motion.div
           variants={item}
-          className="bg-surface-container-low rounded-[2rem] p-6 flex flex-col justify-between"
+          className="bg-surface-container-low rounded-[2rem] p-6 flex flex-col justify-between border border-outline-variant/10"
         >
           <div>
-            <div className="flex items-center gap-2 mb-3">
+            <div className="flex items-center justify-between mb-4">
               <span className="text-primary text-xs font-bold uppercase tracking-widest">Database</span>
+              <span className="text-secondary text-[10px] font-bold uppercase tracking-widest">50x Faster</span>
             </div>
             <div className="text-secondary text-3xl font-extrabold font-[family-name:var(--font-headline)] tracking-tighter mb-1">
               68
             </div>
-            <div className="text-on-surface text-sm font-bold mb-2">Prisma Models</div>
-            <p className="text-on-surface-variant text-xs leading-relaxed">
-              141 BTREE indexes with denormalized chat caching for 50x faster rendering
+            <div className="text-on-surface text-sm font-bold mb-3">Prisma Models</div>
+            <p className="text-on-surface-variant text-xs leading-relaxed mb-4">
+              141 BTREE indexes with denormalized chat schema caching, eliminating subqueries for 50x faster chat list rendering.
             </p>
+            <div className="flex flex-wrap gap-1.5">
+              <span className="px-2 py-0.5 bg-surface-container-highest text-on-surface-variant text-[10px] rounded">Prisma</span>
+              <span className="px-2 py-0.5 bg-surface-container-highest text-on-surface-variant text-[10px] rounded">PostgreSQL</span>
+              <span className="px-2 py-0.5 bg-surface-container-highest text-on-surface-variant text-[10px] rounded">BTREE</span>
+            </div>
           </div>
         </motion.div>
 
         <motion.div
           variants={item}
-          className="bg-surface-container-low rounded-[2rem] p-6 flex flex-col justify-between"
+          className="bg-surface-container-low rounded-[2rem] p-6 flex flex-col justify-between border border-outline-variant/10"
         >
           <div>
-            <div className="flex items-center gap-2 mb-3">
+            <div className="flex items-center justify-between mb-4">
               <span className="text-primary text-xs font-bold uppercase tracking-widest">Queuing</span>
+              <span className="text-secondary text-[10px] font-bold uppercase tracking-widest">16 Exchanges</span>
             </div>
             <div className="text-secondary text-3xl font-extrabold font-[family-name:var(--font-headline)] tracking-tighter mb-1">
               4-Tier
             </div>
-            <div className="text-on-surface text-sm font-bold mb-2">Priority System</div>
-            <p className="text-on-surface-variant text-xs leading-relaxed">
-              Presence-aware routing with circuit breaker pattern across 16 RabbitMQ exchanges
+            <div className="text-on-surface text-sm font-bold mb-3">Priority System</div>
+            <p className="text-on-surface-variant text-xs leading-relaxed mb-4">
+              CRITICAL/HIGH/NORMAL/LOW with presence-aware routing, circuit breaker pattern with DB failover, and burst detection for notification batching.
             </p>
+            <div className="flex flex-wrap gap-1.5">
+              <span className="px-2 py-0.5 bg-surface-container-highest text-on-surface-variant text-[10px] rounded">RabbitMQ</span>
+              <span className="px-2 py-0.5 bg-surface-container-highest text-on-surface-variant text-[10px] rounded">Circuit Breaker</span>
+              <span className="px-2 py-0.5 bg-surface-container-highest text-on-surface-variant text-[10px] rounded">Redis</span>
+            </div>
           </div>
         </motion.div>
       </div>

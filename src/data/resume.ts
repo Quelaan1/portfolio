@@ -18,7 +18,7 @@ export const resumeData = {
     microservicesBuilt: "68+",
     productionSystems: "3",
     backendTechnologies: "15+",
-    yearsEngineering: "5+",
+    yearsEngineering: "3+",
   },
   skills: {
     backend: [
